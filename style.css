@@ -6,16 +6,22 @@
     
 }
 
+html{
+    font-size: 10px;
+}
+
 body{
     background-color: #222;
+    padding: 0rem 1.2rem ;
 }
 .card{
-    width: 90%;
-    max-width: 470px;
+    width: 90vw;
+    max-width: 47.0rem;
+
     background: linear-gradient(135deg, #00feba, #5b548a);
-    margin: 100px auto 0;
-    border-radius: 20px;
-    padding: 40px 35px;
+    margin: 10.0rem auto 0;
+    border-radius: 2.0rem;
+    padding: 4.0rem 3.5rem;
     text-align: center;
 }
 .search{
@@ -23,29 +29,31 @@ body{
     display: flex;
     justify-content: space-between;
     align-items: center;
-
+    
+    
 }
 .search input{
     border: 0;
     outline: 0;
+    max-width: 80%;
     background-color: #ebfffc;
     color: #555;
-    padding: 10px 25px;
-    height: 60px;
-    border-radius: 13px;
+    padding: 1.0rem 2.5rem;
+    height: 6.0rem;
+    border-radius: 1.3rem;
     flex: 1;
-    margin-right: 16px;
-    font-size: 18px;
+    margin-right: 1.6rem;
+    font-size: 1.8rem;
 }
 .search button{
-    font-size: 32px;
+    font-size: 3.2rem;
     text-align: center;
-    height: 60px;
-    width: 60px;
+    height: 6.0rem;
+    width: 6.0rem;
     border: 0;
     outline: 0;
     background: #ebfffc;
-    border-radius:13px;
+    border-radius:1.3rem;
     cursor: pointer;
     display: flex;
     justify-content: center;
@@ -56,25 +64,25 @@ body{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin-top: 32px;
+    margin-top: 3.2rem;
 }
 
 i {
-    font-size: 38px;
+    font-size: 3.8rem;
 }
 
 .wind-container {
-    font-size: 20px;
+    font-size: 2.0rem;
     display: flex;
     align-items: center;
-    gap: 10px;
+    gap: 1.0rem;
 }
 
 .humidity-container {
-    font-size: 20px;
+    font-size: 2.0rem;
     display: flex;
     align-items: center;
-    gap: 10px;
+    gap: 1.0rem;
 }
 
 .weather {
@@ -83,9 +91,18 @@ i {
 
 .error {
     text-align: center;
-    font-size: 16px;
+    font-size: 1.6rem;
     font-weight: bold;
-    margin-top: 16px;
+    margin-top: 1.6rem;
     color: aliceblue;
     display: none;
+}
+
+@media(max-width:500px){
+    .card{
+        padding: 4.0rem 1.5rem;
+    }
+    .search input{
+        max-width: 75%;
+    }
 }
