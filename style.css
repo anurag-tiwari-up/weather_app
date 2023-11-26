@@ -52,24 +52,40 @@ body{
     align-items: center;
 }
 
-h1{
-    /* font-family: cursive; */
-}
 .hum_air{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin-top: 12px;
+    margin-top: 32px;
 }
-.wind{
-    font-size: 25px;
+
+i {
+    font-size: 38px;
+}
+
+.wind-container {
+    font-size: 20px;
     display: flex;
     align-items: center;
     gap: 10px;
 }
-.humidity{
-    font-size: 25px;
+
+.humidity-container {
+    font-size: 20px;
     display: flex;
     align-items: center;
     gap: 10px;
+}
+
+.weather {
+    display: none;
+}
+
+.error {
+    text-align: center;
+    font-size: 16px;
+    font-weight: bold;
+    margin-top: 16px;
+    color: aliceblue;
+    display: none;
 }
