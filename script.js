@@ -3,7 +3,6 @@ let apiUrl = "https://api.openweathermap.org/data/2.5/weather?&units=metric&q=";
 const images = document.querySelector(".images");
 
 const searchBox = document.querySelector(".search input");
-const searchBtn = document.querySelector(".search button");
 
 async function checkData(city) {
   const response = await fetch(apiUrl + city + `&appid=${apiKey}`);
@@ -38,6 +37,7 @@ async function checkData(city) {
 
 }
 
-searchBtn.addEventListener("click", () => {
+document.querySelector('form').addEventListener("submit", (e) => {
+  e.preventDefault()
   checkData(searchBox.value);
 });
